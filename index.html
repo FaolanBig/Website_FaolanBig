@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FaolanBig — Developer Portfolio</title>
+  <meta name="description" content="Portfolio of FaolanBig: profile, recent and most popular GitHub projects, and favorite open-source repos." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a href="#top" class="logo">&lt;<span id="navName">FaolanBig</span>/&gt;</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#popular">Popular</a>
+      <a href="#recent">Recent</a>
+      <a href="#favorites">Favorites</a>
+    </nav>
+    <button id="theme" class="icon-btn" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img id="avatar" class="avatar" alt="Avatar" src="https://github.com/FaolanBig.png" />
+      <p class="eyebrow">Hello, I'm</p>
+      <h1 id="name" class="gradient">FaolanBig</h1>
+      <p class="typed"><span id="typed"></span><span class="caret">|</span></p>
+      <p id="bio" class="bio"></p>
+      <div class="cta">
+        <a id="ghLink" class="btn primary" href="https://github.com/FaolanBig" target="_blank" rel="noopener">View GitHub</a>
+        <a class="btn" href="#popular">See my work</a>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>About me</h2>
+      <div class="stats">
+        <div class="card stat"><b data-k="public_repos">–</b><span>Repositories</span></div>
+        <div class="card stat"><b data-k="followers">–</b><span>Followers</span></div>
+        <div class="card stat"><b data-k="following">–</b><span>Following</span></div>
+        <div class="card stat"><b id="stars">–</b><span>Total stars</span></div>
+      </div>
+      <div class="about-grid">
+        <div class="card">
+          <h3>Info</h3>
+          <ul id="info" class="info"></ul>
+        </div>
+        <div class="card">
+          <h3>Top languages</h3>
+          <div id="langs" class="langs"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popular" class="reveal">
+      <h2>Most popular projects</h2>
+      <div id="popularGrid" class="grid"><p class="muted">Loading…</p></div>
+    </section>
+
+    <section id="recent" class="reveal">
+      <h2>Recent projects</h2>
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Filter by name, topic or language…" />
+        <select id="langFilter"><option value="">All languages</option></select>
+      </div>
+      <div id="recentGrid" class="grid"><p class="muted">Loading…</p></div>
+    </section>
+
+    <section id="favorites" class="reveal">
+      <h2>Projects I like</h2>
+      <p class="muted">Curated list — edit <code>FAVORITES</code> in <code>config.js</code> to add your own.</p>
+      <div id="favGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with plain HTML, CSS &amp; JS · Data from the GitHub API · <a id="footLink" href="https://github.com/FaolanBig" target="_blank" rel="noopener">@FaolanBig</a></p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

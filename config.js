@@ -1,7 +1,7 @@
 // Edit this file to personalize the site.
 const CONFIG = {
   username: "FaolanBig",
-  taglines: ["software developer.", "apen-source enthusiast.", "always learning.", "always online", "proud protogen"],
+  taglines: ["software developer.", "open-source enthusiast.", "always learning.", "always online", "proud protogen"],
   popularCount: 6,
   recentCount: 9,
   hideForks: true
